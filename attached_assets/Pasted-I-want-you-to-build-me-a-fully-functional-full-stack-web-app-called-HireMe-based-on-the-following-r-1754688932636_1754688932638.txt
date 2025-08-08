@@ -1,0 +1,73 @@
+I want you to build me a fully functional full-stack web app called HireMe, based on the following requirements. This is not a skeleton — make it production-ready and working end-to-end.
+
+App Concept: HireMe is an AI-powered platform for startups and entrepreneurs that acts like an “AI employee,” helping in coding, design, marketing, product management, analysis, and more. It should have a modern, clean UI inspired by the Wise money transfer app theme.
+
+Tech Stack:
+
+Frontend: React (with Vite or CRA), TailwindCSS or styled-components for styling.
+
+Backend: Node.js + Express.
+
+Database: Use a simple JSON file or SQLite for data persistence (so it runs in Replit without external DB). Make sure the DB logic is implemented so I can replace it with MongoDB later.
+
+API Calls: Integrate OpenAI or HuggingFace API for AI chat/assistant features.
+
+Fully responsive and mobile-friendly.
+
+Core Features:
+
+Landing Page – Clean hero section, “About HireMe”, “How it works”, “Contact Us”.
+
+User Authentication – Sign up, Login, Logout (JWT-based).
+
+Dashboard –
+
+Personalized AI assistant chat (integrated with OpenAI/HuggingFace API).
+
+Different “modes” for assistance: Coding, Design, Marketing, Product Management, Analysis.
+
+Users can send queries and get AI-generated answers in real time.
+
+Projects Section – Users can create, view, and delete “project” entries with AI notes.
+
+Search Functionality – Working search bar in dashboard that instantly returns relevant projects or AI resources.
+
+Admin Mode – A separate admin login that can view all users and their projects.
+
+UI Requirements:
+
+Layout and components must be well-aligned, no broken styling.
+
+Color scheme & design similar to Wise app – modern, clean, white space, blue/green accent colors, rounded cards, soft shadows.
+
+Make sure all components are visible on all screen sizes (fix alignment issues).
+
+Functionality Requirements:
+
+AI chat must be working (not placeholder text).
+
+Search must return results from existing stored projects.
+
+Authentication must actually work.
+
+All CRUD operations for projects must work.
+
+Output Requirements:
+
+Give me the complete code (frontend + backend) in one Replit project.
+
+Ensure I can export the code and push it to GitHub.
+
+Ensure the app runs locally (npm install && npm run dev or similar) and can be deployed to Vercel after exporting.
+
+Include a README file with instructions.
+
+Build this exactly as described, fully working, no placeholders.
+
+If you paste this into Replit AI, it will try to give you a working project instead of a half-baked skeleton, and you’ll be able to:
+
+Export it → GitHub → Deploy on Vercel.
+
+Use it in interviews as your own project.
+
+Keep all the code for learning.
