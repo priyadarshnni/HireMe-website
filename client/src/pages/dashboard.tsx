@@ -34,12 +34,23 @@ export default function Dashboard() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
               <div 
-                className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-all duration-200 hover:scale-105"
+                className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-all duration-200 hover:scale-105 active:scale-95"
                 onClick={() => {
-                  console.log('Logo clicked, current location:', location);
-                  // Navigate to home and scroll to top
-                  navigate('/');
-                  setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+                  // Provide visual feedback
+                  const logo = event?.currentTarget;
+                  if (logo) {
+                    logo.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                      logo.style.transform = '';
+                    }, 150);
+                  }
+                  
+                  // Always navigate to dashboard root and scroll to top
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  // Reset any selected project or form states
+                  setSelectedProject(null);
+                  setShowProjectForm(false);
+                  setSelectedMode("coding");
                 }}
               >
                 <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">

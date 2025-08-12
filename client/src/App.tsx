@@ -27,6 +27,7 @@ function Router() {
       ) : (
         <>
           <Route path="/" component={Dashboard} />
+          <Route path="/dashboard" component={Dashboard} />
           {user?.isAdmin && <Route path="/admin" component={Admin} />}
         </>
       )}
