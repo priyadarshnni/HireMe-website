@@ -3,7 +3,7 @@ import { createServer, type Server } from "http";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import { storage } from "./storage";
-import { aiService } from "./openai";
+import { aiService } from "./gemini";
 import { insertUserSchema, insertProjectSchema, insertChatSessionSchema } from "@shared/schema";
 import { z } from "zod";
 
