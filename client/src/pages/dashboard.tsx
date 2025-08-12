@@ -32,12 +32,14 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">
-                  <i className="fas fa-robot text-white text-sm"></i>
+              <Link href="/">
+                <div className="flex items-center space-x-2 cursor-pointer">
+                  <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">
+                    <i className="fas fa-robot text-white text-sm"></i>
+                  </div>
+                  <span className="text-xl font-bold text-hire-secondary">HireMe</span>
                 </div>
-                <span className="text-xl font-bold text-hire-secondary">HireMe</span>
-              </div>
+              </Link>
             </div>
             
             <div className="flex items-center space-x-4">
