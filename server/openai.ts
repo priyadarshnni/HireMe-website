@@ -59,8 +59,21 @@ export class AIService {
       return {
         message: assistantMessage,
       };
-    } catch (error) {
+    } catch (error: any) {
       console.error('OpenAI API error:', error);
+      
+      if (error?.status === 429 && error?.code === 'insufficient_quota') {
+        return {
+          message: "I've reached my usage limit for OpenAI. Please check your OpenAI account billing and quota at https://platform.openai.com/account/billing to continue using the AI features.",
+        };
+      }
+      
+      if (error?.status === 401) {
+        return {
+          message: "There's an issue with the OpenAI API key configuration. Please check that your API key is valid.",
+        };
+      }
+      
       return {
         message: "I'm experiencing technical difficulties. Please try again in a moment.",
       };
@@ -86,8 +99,13 @@ export class AIService {
       });
 
       return response.choices[0]?.message?.content || '{"overview": "Project notes generation failed", "keyPoints": [], "recommendations": [], "nextSteps": []}';
-    } catch (error) {
+    } catch (error: any) {
       console.error('OpenAI API error for project notes:', error);
+      
+      if (error?.status === 429 && error?.code === 'insufficient_quota') {
+        return '{"overview": "OpenAI usage limit reached. Please check your billing at https://platform.openai.com/account/billing", "keyPoints": [], "recommendations": [], "nextSteps": []}';
+      }
+      
       return '{"overview": "Unable to generate project notes", "keyPoints": [], "recommendations": [], "nextSteps": []}';
     }
   }

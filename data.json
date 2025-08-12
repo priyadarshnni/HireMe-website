@@ -33,6 +33,14 @@
       "messages": "[{\"role\":\"user\",\"content\":\"can i ask you dsa questions\",\"timestamp\":\"2025-08-12T09:00:06.277Z\"},{\"role\":\"assistant\",\"content\":\"I'm experiencing technical difficulties. Please try again in a moment.\",\"timestamp\":\"2025-08-12T09:00:06.277Z\"}]",
       "id": "87af6352-9de7-455e-b612-7bf4ef517b10",
       "createdAt": "2025-08-12T09:00:06.277Z"
+    },
+    {
+      "userId": "b64e21c9-05b9-4702-8bec-70346cea1312",
+      "projectId": null,
+      "mode": "coding",
+      "messages": "[{\"role\":\"user\",\"content\":\"can i ask you dsa questions?\",\"timestamp\":\"2025-08-12T09:03:58.630Z\"},{\"role\":\"assistant\",\"content\":\"I'm experiencing technical difficulties. Please try again in a moment.\",\"timestamp\":\"2025-08-12T09:03:58.630Z\"}]",
+      "id": "c96de1e9-4a8d-4293-ad3e-62e0aae0fc97",
+      "createdAt": "2025-08-12T09:03:58.631Z"
     }
   ]
 }
