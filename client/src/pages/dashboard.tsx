@@ -33,7 +33,10 @@ export default function Dashboard() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
               <Link href="/">
-                <div className="flex items-center space-x-2 cursor-pointer">
+                <div 
+                  className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => console.log('HireMe logo clicked - navigating to home')}
+                >
                   <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">
                     <i className="fas fa-robot text-white text-sm"></i>
                   </div>
