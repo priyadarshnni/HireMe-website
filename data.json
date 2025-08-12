@@ -1,5 +1,38 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "pri",
+      "email": "priyadarshniii15@gmail.com",
+      "password": "$2b$10$aQKSIXZ6934hNqydvkv1be4f7BIccMZDFskqaD00XnvPev1TMSlqC",
+      "id": "b64e21c9-05b9-4702-8bec-70346cea1312",
+      "createdAt": "2025-08-10T19:18:46.836Z"
+    }
+  ],
   "projects": [],
-  "chatSessions": []
+  "chatSessions": [
+    {
+      "userId": "b64e21c9-05b9-4702-8bec-70346cea1312",
+      "projectId": null,
+      "mode": "coding",
+      "messages": "[{\"role\":\"user\",\"content\":\"can i ask dsa questions?\",\"timestamp\":\"2025-08-10T19:19:07.049Z\"},{\"role\":\"assistant\",\"content\":\"I'm experiencing technical difficulties. Please try again in a moment.\",\"timestamp\":\"2025-08-10T19:19:07.049Z\"}]",
+      "id": "6015fe17-b6b6-425b-9a95-e0d0ebb8ee3d",
+      "createdAt": "2025-08-10T19:19:07.049Z"
+    },
+    {
+      "userId": "b64e21c9-05b9-4702-8bec-70346cea1312",
+      "projectId": null,
+      "mode": "coding",
+      "messages": "[{\"role\":\"user\",\"content\":\"can i ask dsa questions?\",\"timestamp\":\"2025-08-10T19:19:05.348Z\"},{\"role\":\"assistant\",\"content\":\"I'm experiencing technical difficulties. Please try again in a moment.\",\"timestamp\":\"2025-08-10T19:19:05.948Z\"},{\"role\":\"user\",\"content\":\"what is the problema\",\"timestamp\":\"2025-08-10T19:19:38.064Z\"},{\"role\":\"assistant\",\"content\":\"I'm experiencing technical difficulties. Please try again in a moment.\",\"timestamp\":\"2025-08-10T19:19:38.064Z\"}]",
+      "id": "1b8a644a-6662-4e92-9261-4855bd4537b5",
+      "createdAt": "2025-08-10T19:19:38.064Z"
+    },
+    {
+      "userId": "b64e21c9-05b9-4702-8bec-70346cea1312",
+      "projectId": null,
+      "mode": "coding",
+      "messages": "[{\"role\":\"user\",\"content\":\"can i ask you dsa questions\",\"timestamp\":\"2025-08-12T09:00:06.277Z\"},{\"role\":\"assistant\",\"content\":\"I'm experiencing technical difficulties. Please try again in a moment.\",\"timestamp\":\"2025-08-12T09:00:06.277Z\"}]",
+      "id": "87af6352-9de7-455e-b612-7bf4ef517b10",
+      "createdAt": "2025-08-12T09:00:06.277Z"
+    }
+  ]
 }
