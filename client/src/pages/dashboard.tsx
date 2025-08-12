@@ -34,8 +34,11 @@ export default function Dashboard() {
             <div className="flex items-center space-x-4">
               <Link href="/">
                 <div 
-                  className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity"
-                  onClick={() => console.log('HireMe logo clicked - navigating to home')}
+                  className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-all duration-200 hover:scale-105"
+                  onClick={() => {
+                    // Smooth scroll to top when logo is clicked
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                 >
                   <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">
                     <i className="fas fa-robot text-white text-sm"></i>
