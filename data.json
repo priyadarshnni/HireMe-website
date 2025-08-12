@@ -49,6 +49,14 @@
       "messages": "[{\"role\":\"user\",\"content\":\"can i ask dsa questions?\",\"timestamp\":\"2025-08-12T09:11:23.327Z\"},{\"role\":\"assistant\",\"content\":\"Yes, absolutely!\\n\\nAs an expert software engineer, I can definitely help with Data Structures and Algorithms (DSA) questions. Feel free to ask about:\\n\\n*   Understanding specific algorithms (sorting, searching, graph algorithms, dynamic programming, etc.)\\n*   Choosing the right data structure for a problem\\n*   Optimizing time and space complexity\\n*   Solving specific DSA problems\\n*   Implementing algorithms in various languages\\n\\nGo ahead, ask your question!\",\"timestamp\":\"2025-08-12T09:11:23.327Z\"}]",
       "id": "6e5aa4cf-5fbb-4d53-9480-6743e778f249",
       "createdAt": "2025-08-12T09:11:23.328Z"
+    },
+    {
+      "userId": "b64e21c9-05b9-4702-8bec-70346cea1312",
+      "projectId": null,
+      "mode": "analysis",
+      "messages": "[{\"role\":\"user\",\"content\":\"will you help me in stock analysis?\",\"timestamp\":\"2025-08-12T10:31:15.694Z\"},{\"role\":\"user\",\"content\":\"will you help me in stock analysis?\",\"timestamp\":\"2025-08-12T10:31:20.267Z\"},{\"role\":\"assistant\",\"content\":\"Yes, absolutely! As I mentioned, I can definitely help you with stock analysis.\\n\\nTo get started, could you please tell me:\\n\\n*   **What specific kind of stock analysis are you interested in today?** (e.g., looking at a particular company, understanding market trends, evaluating a portfolio, predicting price movements, etc.)\\n*   **What are your goals?** (e.g., identifying potential investments, understanding risk, learning about financial metrics, etc.)\\n\\nOnce I have a better idea of what you're looking for, I can help you with data analysis, statistical insights, visualizations, and more.\",\"timestamp\":\"2025-08-12T10:31:20.267Z\"}]",
+      "id": "8636095d-c2e3-4a10-97af-6c400feadb89",
+      "createdAt": "2025-08-12T10:31:20.267Z"
     }
   ]
 }
