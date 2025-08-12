@@ -33,21 +33,20 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
+              <Link href="/">
+                <Button variant="ghost" size="sm" className="text-hire-primary hover:text-hire-secondary">
+                  <i className="fas fa-arrow-left mr-2"></i>
+                  Home
+                </Button>
+              </Link>
+              
+              <div className="w-px h-6 bg-neutral-200"></div>
+              
               <div 
                 className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-all duration-200 hover:scale-105 active:scale-95"
                 onClick={() => {
-                  // Provide visual feedback
-                  const logo = event?.currentTarget;
-                  if (logo) {
-                    logo.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                      logo.style.transform = '';
-                    }, 150);
-                  }
-                  
-                  // Always navigate to dashboard root and scroll to top
+                  // Reset dashboard state
                   window.scrollTo({ top: 0, behavior: 'smooth' });
-                  // Reset any selected project or form states
                   setSelectedProject(null);
                   setShowProjectForm(false);
                   setSelectedMode("coding");
@@ -56,7 +55,7 @@ export default function Dashboard() {
                 <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">
                   <i className="fas fa-robot text-white text-sm"></i>
                 </div>
-                <span className="text-xl font-bold text-hire-secondary">HireMe</span>
+                <span className="text-xl font-bold text-hire-secondary">Dashboard</span>
               </div>
             </div>
             

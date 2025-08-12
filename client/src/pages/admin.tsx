@@ -76,13 +76,20 @@ export default function Admin() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
               <Link href="/">
-                <div className="flex items-center space-x-2 cursor-pointer">
-                  <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center">
-                    <i className="fas fa-shield-alt text-white text-sm"></i>
-                  </div>
-                  <span className="text-xl font-bold text-hire-secondary">Admin Panel</span>
-                </div>
+                <Button variant="ghost" size="sm" className="text-hire-primary hover:text-hire-secondary">
+                  <i className="fas fa-arrow-left mr-2"></i>
+                  Home
+                </Button>
               </Link>
+              
+              <div className="w-px h-6 bg-neutral-200"></div>
+              
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center">
+                  <i className="fas fa-shield-alt text-white text-sm"></i>
+                </div>
+                <span className="text-xl font-bold text-hire-secondary">Admin Panel</span>
+              </div>
             </div>
             
             <div className="flex items-center space-x-4">
