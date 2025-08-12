@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import AIChat from "@/components/dashboard/ai-chat";
 import ProjectList from "@/components/dashboard/project-list";
 import ProjectForm from "@/components/dashboard/project-form";
@@ -13,6 +13,7 @@ import SearchBar from "@/components/dashboard/search-bar";
 
 export default function Dashboard() {
   const { user, logout } = useAuth();
+  const [location, navigate] = useLocation();
   const [selectedMode, setSelectedMode] = useState("coding");
   const [showProjectForm, setShowProjectForm] = useState(false);
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -32,20 +33,20 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
-              <Link href="/">
-                <div 
-                  className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-all duration-200 hover:scale-105"
-                  onClick={() => {
-                    // Smooth scroll to top when logo is clicked
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
-                >
-                  <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">
-                    <i className="fas fa-robot text-white text-sm"></i>
-                  </div>
-                  <span className="text-xl font-bold text-hire-secondary">HireMe</span>
+              <div 
+                className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-all duration-200 hover:scale-105"
+                onClick={() => {
+                  console.log('Logo clicked, current location:', location);
+                  // Navigate to home and scroll to top
+                  navigate('/');
+                  setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+                }}
+              >
+                <div className="w-8 h-8 bg-gradient-to-br from-hire-primary to-hire-secondary rounded-lg flex items-center justify-center">
+                  <i className="fas fa-robot text-white text-sm"></i>
                 </div>
-              </Link>
+                <span className="text-xl font-bold text-hire-secondary">HireMe</span>
+              </div>
             </div>
             
             <div className="flex items-center space-x-4">
